@@ -18,6 +18,7 @@
     "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
     "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
     "Microsoft.ApplicationInsights": "2.2.0",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
 
     "Microsoft.AspNetCore.Mvc": "1.0.0",
     "Microsoft.AspNetCore.Razor.Tools": {
