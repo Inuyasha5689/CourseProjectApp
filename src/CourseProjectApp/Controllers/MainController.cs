@@ -17,9 +17,12 @@ namespace CourseProjectApp.Controllers
 
         //Second Instance
         private readonly FirstClass _secondClass;
-        public MainController(FirstClass secondClass)
+
+        private readonly AccessModifiers _accessModifier;
+        public MainController(FirstClass secondClass, AccessModifiers accessModifier)
         {
             _secondClass = secondClass;
+            _accessModifier = accessModifier;
         }
 
         public IActionResult Index()
@@ -34,6 +37,24 @@ namespace CourseProjectApp.Controllers
             //Methods
             _secondClass.NoReturn("Great Value");
             var boolValue =_secondClass.TrueFalse(6);
+
+
+            // Accessors
+
+                //Public
+
+                _accessModifier.PublicString = "Value";
+                _accessModifier.PublicMethod();
+
+                //Private Not Allowed
+
+                //_accessModifier.PrivateString;
+                //_accessModifier.PrivateMethod();
+
+                //Protected
+
+                //_accessModifier.ProtectedMethod();
+
 
             return View();
         }
