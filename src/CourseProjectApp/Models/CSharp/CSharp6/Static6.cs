@@ -17,7 +17,16 @@ namespace CourseProjectApp.Models.CSharp.CSharp6
             // C# 6 Statics
             WriteLine("Text");
 
+            //String Interpolation!!!!
+            string first = "My First";
+            string second = "My Second";
+            //C#5 and below String Placeholders
+            WriteLine("{0} is my first value. {1} is my second value", first, second);
 
+
+            //C#6 String Interpolation
+
+            WriteLine($"{first} is my first value. {second} is my second value");
         }
     }
 }
