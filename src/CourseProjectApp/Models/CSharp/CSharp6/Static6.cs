@@ -56,6 +56,21 @@ namespace CourseProjectApp.Models.CSharp.CSharp6
             //C#6
 
             WriteLine(valuenull?.ToString() ?? "It is null");
+
+            // C#6 Try Catch Async
+
+            try
+            {
+                //await 
+            }
+            catch (Exception ex)
+            {
+                //await 
+            }
+            finally
+            {
+                //await 
+            }
         }
     }
 }
