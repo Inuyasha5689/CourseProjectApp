@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CourseProjectApp.Models.CSharp;
+using static CourseProjectApp.Models.CSharp.CSharp6.Static6;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,6 +28,10 @@ namespace CourseProjectApp.Controllers
 
         public IActionResult Index()
         {
+            //Static class method C#6
+
+            FirstStaticMethod();
+
             ViewBag.value = "My First MVC Route";
 
             _firstclass.MainValue = "Main Value";
