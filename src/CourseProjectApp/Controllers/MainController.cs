@@ -13,7 +13,7 @@ namespace CourseProjectApp.Controllers
     {
         // GET: /<controller>/
         // First Instance
-        FirstClass firstclass = new FirstClass();
+        FirstClass _firstclass = new FirstClass();
 
         //Second Instance
         private readonly FirstClass _secondClass;
@@ -26,6 +26,7 @@ namespace CourseProjectApp.Controllers
         {
             ViewBag.value = "My First MVC Route";
 
+            _firstclass.MainValue = "Main Value";
             //Third Instance
             string value = "First Value";
             FirstClass thirdClass = new FirstClass(value);

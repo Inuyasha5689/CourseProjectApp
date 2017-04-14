@@ -9,6 +9,19 @@ namespace CourseProjectApp.Models.CSharp
     {
         public string Value;
 
+        private string _value;
+        //Properties
+
+        public string MainValue {
+            get {
+                return _value;
+
+            }
+            set {
+                _value = value;
+            }
+        }
+
         public FirstClass(string value)
         {
             Value = value;
