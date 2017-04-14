@@ -31,5 +31,28 @@ namespace CourseProjectApp.Models.CSharp
         {
 
         }
+
+        // Return Method
+
+        public bool TrueFalse(int number)
+        {
+            
+
+            if(number > 5)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        // Void Method No Return Value
+
+        public void NoReturn(string value)
+        {
+            Console.WriteLine($"This is my Return Value:{value}");
+        }
     }
 }

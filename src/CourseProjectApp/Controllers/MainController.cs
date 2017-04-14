@@ -31,6 +31,10 @@ namespace CourseProjectApp.Controllers
             string value = "First Value";
             FirstClass thirdClass = new FirstClass(value);
 
+            //Methods
+            _secondClass.NoReturn("Great Value");
+            var boolValue =_secondClass.TrueFalse(6);
+
             return View();
         }
     }
