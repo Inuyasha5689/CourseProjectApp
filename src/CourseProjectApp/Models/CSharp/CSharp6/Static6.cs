@@ -8,6 +8,24 @@ namespace CourseProjectApp.Models.CSharp.CSharp6
 {
     public class Static6
     {
+        //Auto-Property Initializers
+        //C#5 & Below
+        //public string MyString { get; set; }
+
+        //public int MyInt { get; set; }
+
+        //public Static6()
+        //{
+        //    MyString = "My Value";
+        //    MyInt = 6;
+        //}
+
+        //C#6 Auto-Property Initializers
+
+        public string MyString { get; } = "My Value";
+
+        public int MyInt { get; set; } = 6;
+
         public static void FirstStaticMethod()
         {
             // C# 5 & below Statics
