@@ -26,6 +26,22 @@ namespace CourseProjectApp.Models.CSharp.CSharp6
 
         public int MyInt { get; set; } = 6;
 
+        // C#6 Expression Bodied Properties
+
+        public string FirstName { get; } = "John";
+
+        public string LastName { get; } = "Jacob";
+
+        public string MyFullName => FirstName + " " + LastName;
+
+        //C#5 and below
+
+        public string FullName2 {
+            get {
+                return FirstName + " " + LastName;
+            }
+        }
+
         public static void FirstStaticMethod()
         {
             // C# 5 & below Statics
@@ -71,6 +87,17 @@ namespace CourseProjectApp.Models.CSharp.CSharp6
             {
                 //await 
             }
+        }
+
+        // C#6 Expression Bodied Methods
+
+        private double add(double v, double a) => v + a;
+
+        //C# 5
+
+        private double add2(double b, double c)
+        {
+            return b + c;
         }
     }
 }
