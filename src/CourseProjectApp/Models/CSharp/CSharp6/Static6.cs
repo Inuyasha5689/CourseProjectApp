@@ -45,6 +45,17 @@ namespace CourseProjectApp.Models.CSharp.CSharp6
             //C#6 String Interpolation
 
             WriteLine($"{first} is my first value. {second} is my second value");
+
+            //Null Conditional Operator and & Null Propagation
+
+            string valuenull = "Has a value";
+
+            // C#5 and below
+            WriteLine(valuenull != null ? valuenull : "It is null");
+
+            //C#6
+
+            WriteLine(valuenull?.ToString() ?? "It is null");
         }
     }
 }
